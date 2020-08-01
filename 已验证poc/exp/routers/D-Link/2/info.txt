@@ -1,0 +1,8 @@
+验证方法：验证文章
+文章链接：http://www.0-sec.org/iot/D-Link/CVE-2018-20056.html
+影响产品：D-LINK的DIR-619L Rev.B 2.06B1版本之前和DIR-605L Rev.B 2.12B1版本之前的设备。
+漏洞简介：D-LINK的DIR-619L Rev.B 2.06B1版本之前和DIR-605L Rev.B 2.12B1版本之前的设备，在/bin/boa文件的formLanguage函数中存在缓冲区溢出漏洞，在调用sprintf函数时没有对参数的长度进行检查，导致远程攻击者可以通过访问
+
+http://[ip]/goform/formLanguageChange并指定currTime参数实现远程代码执行。
+
+使用方法：更改exp中IP为目标IP运行即可

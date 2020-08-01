@@ -1,0 +1,11 @@
+验证方式：文章验证
+验证链接：http://wiki.0-sec.org/iot/360/360%20Phone%20N6%20Pro.html
+漏洞简介：
+360 Phone N6 Pro V096内核组件中的内核模块允许攻击者使用命令3235427072在设备/ dev / block / mmcblk0rpmb上通过ioctl的自变量注入精心设计的自变量，并导致内核崩溃。
+漏洞影响：
+	名称：360 Phone N6 Pro
+	型号：1801-A01
+	安卓版本：7.1.1
+	版本号：V096
+	内核版本：Linux localhost 4.4.21-perf＃1 SMP PREEMPT Wed Mar 28 28 15:24:20 UTC 2018 aarch64
+	使用方法：打开poc，将对应的ip地址，端口,用户名密码及命令写入，运行即可。

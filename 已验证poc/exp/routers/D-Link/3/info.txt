@@ -1,0 +1,8 @@
+验证方法：验证文章
+文章链接：http://www.0-sec.org/iot/D-Link/CVE-2018-20057.html
+影响产品：D-LINK的DIR-619L Rev.B 2.06B1版本之前和DIR-605L Rev.B 2.12B1版本之前的设备。
+漏洞简介：D-LINK的DIR-619L Rev.B 2.06B1版本之前和DIR-605L Rev.B 2.12B1版本之前的设备，在/bin/boa文件的formSysCmd函数存在后门，导致攻击者在身份认证后可以通过访问
+
+http://[ip]//goform/formSysCmd并指定sysCmd参数，从而实现远程命令注入。
+
+使用方法：更改exp中IP为目标IP，login_n换为真实用户名，login_pass换成真实密码，运行即可

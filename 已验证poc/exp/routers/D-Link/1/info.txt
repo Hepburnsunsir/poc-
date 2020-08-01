@@ -1,0 +1,8 @@
+验证方法：验证文章
+文章链接：http://www.0-sec.org/iot/D-Link/CVE-2018-19986.html
+影响产品：D-Link DIR-818LW Rev.A 2.05.B03
+	 DIR-822 B1 202KRb06
+漏洞简介：
+D-Link DIR-822和D-Link DIR-818LW都是中国台湾友讯（D-Link）公司的一款无线路由器。 D-Link DIR-818LW Rev.A 2.05.B03和DIR-822 B1 202KRb06中的‘RemotePort’参数存在命令注入漏洞。该漏洞源于外部输入数据构造可执行命令过程中，网络系统或产品未正确过滤其中的特殊元素。攻击者可利用该漏洞执行非法命令。
+
+使用方法：更改exp中IP、adminPw为相应目标的相关参数运行即可

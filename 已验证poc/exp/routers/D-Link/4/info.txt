@@ -1,0 +1,6 @@
+验证方法：验证文章
+文章链接：http://www.0-sec.org/iot/D-Link/CVE-2018-20057.html
+影响产品：D-LINK的DIR-619L Rev.B 2.06B1版本之前和DIR-605L Rev.B 2.12B1版本之前的设备。
+漏洞简介：D-Link DIR 823G 1.02B03及之前的版本中存在命令注入漏洞，攻击者可通过发送带有shell元字符的特制/HNAP1请求利用该漏洞执行任意的操作系统命令。GetNetworkTomographyResult函数中调用system函数，执行的内容中包括不受信任的用户输入Address字段，攻击者可以远程执行任意命令。
+
+使用方法：更改exp中IP为目标IP，运行即可

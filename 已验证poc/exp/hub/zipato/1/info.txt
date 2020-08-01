@@ -1,0 +1,6 @@
+验证方式：验证文章
+文章链接：https://blackmarble.sh/zipato-smart-hub/
+影响产品：Zipato ZM.ZWUS ZipaMicro Z-Wave控制器
+使用方法：
+python cve_2019_9561.py <目标ip>
+参考链接：https://blackmarble.sh/zipato-smart-hub/

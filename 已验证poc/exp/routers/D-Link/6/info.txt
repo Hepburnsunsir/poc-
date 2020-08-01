@@ -1,0 +1,5 @@
+验证方法：验证文章
+文章链接：http://www.0-sec.org/iot/D-Link/CVE-2019%E2%80%9317621.html
+影响产品：D-Link DIR-859 1.05版本和1.06B01 Beta01版本
+漏洞简介：D-Link DIR-859是中国台湾友讯（D-Link）公司的一款无线路由器。 D-Link DIR-859 1.05版本和1.06B01 Beta01版本中涉及UPnP请求的代码存在安全漏洞。远程攻击者可借助特制的HTTP SUBSCRIBE请求利用该漏洞以root权限执行系统命令。
+使用方法：该脚本属于metasploit脚本，运行metasploit，将RHOST与RPORT等相关参数输进去后，run即可。

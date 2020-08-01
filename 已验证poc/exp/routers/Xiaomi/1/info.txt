@@ -1,0 +1,5 @@
+验证方式：文章复现
+文章链接：https://github.com/UltramanGaia/Xiaomi_Mi_WiFi_R3G_Vulnerability_POC/blob/master/report/report.md
+漏洞简介：Xiaomi Mi WiFi R3G是中国小米科技（Xiaomi）公司的一款3G路由器。 Xiaomi Mi WiFi R3G 2.28.23-stable之前版本中存在输入验证错误漏洞。该漏洞源于网络系统或产品未对输入的数据进行正确的验证。
+漏洞影响: Xiaomi Mi WiFi R3G 2.28.23-stable之前版本
+详情请参考：https://github.com/UltramanGaia/Xiaomi_Mi_WiFi_R3G_Vulnerability_POC/blob/master/report/report.md

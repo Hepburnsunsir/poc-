@@ -1,0 +1,7 @@
+验证方式：验证视频+验证文章
+文章链接：https://medium.com/tenable-techblog/routeros-chain-to-root-f4e0b07c0b21
+验证视频：https://youtu.be/5SW7z0eUDuA
+目标产品：MikroTik RouterOS 6.45.7
+
+poc用法：
+albinolobster@ubuntu:~/routeros/cleaner_wrasse/build$ ./cleanner_wrasse -i 192.168.1.50 -u admin

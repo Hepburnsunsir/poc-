@@ -1,0 +1,5 @@
+验证方式：文章验证
+验证链接：http://wiki.0-sec.org/iot/TP-Link/CVE-2020-9374.html
+漏洞描述：在TP-Link TL-WR849N 0.9.1 4.16设备上，当攻击者将特定的外壳元字符发送到面板的traceroute功能时，可以利用诊断区域中的远程命令执行漏洞。
+漏洞影响：TP-Link TL-WR849N 0.9.1 4.16
+使用方法：修改exp中的目标ip地址运行即可

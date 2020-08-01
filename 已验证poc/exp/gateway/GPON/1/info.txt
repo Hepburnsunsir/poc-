@@ -1,0 +1,8 @@
+验证方式：验证文章
+文章链接：https://medium.com/tenable-techblog/gpon-home-gateway-rce-threatens-tens-of-thousands-users-c4a17fd25b97
+目标产品：GPON Home Gateway
+
+poc用法：
+1、使用nmap -sU -p 69 192.168.1.1 查看目标69端口是否开启
+2、python cve_2019_3921.py -t http://192.168.1.1/ 开启目标的tftp服务（69端口）
+3、使用nmap -sU -p 69 192.168.1.1 查看目标69端口是否开启

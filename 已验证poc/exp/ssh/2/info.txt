@@ -1,0 +1,15 @@
+验证方式：验证文章
+文章链接：https://medium.com/tenable-techblog/an-old-cisco-openssh-bug-342ce6679f61
+目标产品：所有拥有ssh的设备
+
+poc用法：
+usage: libSSH.py [-h] [--host HOST] [-p PORT] [-log LOGFILE]
+
+libSSH Authentication Bypass
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --host HOST           Host
+  -p PORT, --port PORT  libSSH port
+  -log LOGFILE, --logfile LOGFILE
+                        Logfile to write conn logs

